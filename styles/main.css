@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,700&display=swap');
+
+
+/* HTML Selectors */
+article {
+    margin: 10px;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #CCE3DE;
+}
+
+div {
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+    border: 5px solid #555;
+
+}
+
+label {
+    display: inline-block;
+    min-width: 120px;
+    text-align: right;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+/* nav {
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul li {
+    display: none;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #efefef;
+    color: black;
+} */
+
+section {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+
+/* Class Selectors */
+.active {
+    background-color: white;
+    color: black;
+}
+
+.open li {
+    display: block;
+}
+
+/* ID Selectors */
+#head {
+    font-size: 40px;
+}
+
+#quilts {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#quotes {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 32.5em) {
+    nav ul {
+        flex-direction: row;
+    }
+    
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    #quilts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    #quilts {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

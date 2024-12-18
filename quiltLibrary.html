@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Susan's Quilt Library</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Susan's Quilt Library</h1>
+    </header>
+    <main>
+        <section>
+            <h2>
+                For this day: 
+            </h2>
+            <h3>
+                <span id="quiltQuote2"></span>
+            </h3>
+        </section>
+        <hr>
+        <section>
+            <h2 id="head">Quilts</h2>
+            <p>                
+                Sort by: 
+                <select id="sortBy">
+                    <option value="none"> </option>
+                    <option value="name">Quilts by Name</option>
+                    <option value="yearCreatedNewest">Quilts by Year (recent first)</option>
+                    <option value="yearCreated">Quilts by Year (oldest first)</option>
+                    <option value="size">Quilts by Size</option>
+                </select>
+            </p>
+            <div id="quilts">
+            </div>
+        </section>
+        <section>
+            <h3 id="quotes">Quotes</h3>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Quilts by Susan Greenhalgh | Site by Audrey Checketts
+    </footer>
+    <script src="scripts/quiltInfo.js"></script>
+</body>
+
+</html>
